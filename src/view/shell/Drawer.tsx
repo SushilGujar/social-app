@@ -710,11 +710,11 @@ function ExtraLinks() {
         <Text style={t.atoms.text_contrast_medium}>
           <Trans>
             Logo by{' '}
-            <InlineLinkText
-              style={[a.text_md]}
-              to="/profile/sawaratsuki.bsky.social"
-              label="@sawaratsuki.bsky.social">
-              @sawaratsuki.bsky.social
+              <InlineLinkText
+                style={[a.text_md]}
+                to="/profile/sawaratsuki.pulse.social"
+                label="@sawaratsuki.pulse.social">
+              @sawaratsuki.pulse.social
             </InlineLinkText>
           </Trans>
         </Text>

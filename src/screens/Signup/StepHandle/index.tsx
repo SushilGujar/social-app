@@ -19,6 +19,7 @@ import {
   checkHandleAvailability,
   useHandleAvailabilityQuery,
 } from '#/state/queries/handle-availability'
+import {ChatBubble} from '#/screens/Onboarding/ChatBubble'
 import {useSignupContext} from '#/screens/Signup/state'
 import {atoms as a, native, useTheme} from '#/alf'
 import * as TextField from '#/components/forms/TextField'
@@ -39,6 +40,13 @@ export function StepHandle() {
   const isNextLoading = useThrottledValue(state.isLoading, 500)
 
   const validCheck = validateServiceHandle(draftValue, state.userDomain)
+
+  const _rawDomain = state.userDomain ?? ''
+  let _normalizedDomain = _rawDomain.replace(/^[.]+/, '')
+  if (_normalizedDomain === 'bsky.social') {
+    _normalizedDomain = 'pulse.social'
+  }
+  const displayDomain = _normalizedDomain ? `.${_normalizedDomain}` : ''
 
   const {
     debouncedUsername: debouncedDraftValue,
@@ -139,10 +147,13 @@ export function StepHandle() {
   return (
     <>
       <View style={[a.gap_sm, a.pt_lg, a.z_10]}>
+        <ChatBubble>
+          <Trans>Now let's pick a username for you.</Trans>
+        </ChatBubble>
         <View>
           <TextField.Root isInvalid={textFieldInvalid}>
             <TextField.Icon icon={AtIcon} />
-            <TextField.Input
+              <TextField.Input
               testID="handleInput"
               onChangeText={val => {
                 if (state.error) {
@@ -150,7 +161,7 @@ export function StepHandle() {
                 }
                 setDraftValue(val.toLocaleLowerCase())
               }}
-              label={state.userDomain}
+              label={displayDomain}
               value={draftValue}
               keyboardType="ascii-capable" // fix for iOS replacing -- with —
               autoCapitalize="none"
@@ -159,7 +170,7 @@ export function StepHandle() {
               autoComplete="off"
             />
             {draftValue.length > 0 && (
-              <TextField.GhostText value={state.userDomain}>
+              <TextField.GhostText value={displayDomain}>
                 {draftValue}
               </TextField.GhostText>
             )}
@@ -181,12 +192,12 @@ export function StepHandle() {
             {isHandleTaken && validCheck.overall && (
               <>
                 <Requirement>
-                  <RequirementText>
-                    <Trans>
-                      {createFullHandle(draftValue, state.userDomain)} is not
-                      available
-                    </Trans>
-                  </RequirementText>
+                    <RequirementText>
+                      <Trans>
+                        {createFullHandle(draftValue, displayDomain)} is not
+                        available
+                      </Trans>
+                    </RequirementText>
                 </Requirement>
                 {isHandleAvailable.suggestions &&
                   isHandleAvailable.suggestions.length > 0 && (

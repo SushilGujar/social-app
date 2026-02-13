@@ -465,7 +465,7 @@ function Header({
           {richText ? <RichText value={richText} style={[a.text_md]} /> : null}
           {!hasSession ? (
             <Button
-              label={_(msg`Join Bluesky`)}
+              label={_(msg`Join Pulse`)}
               onPress={() => {
                 setActiveStarterPack({
                   uri: starterPack.uri,
@@ -476,7 +476,7 @@ function Header({
               color="primary"
               size="large">
               <ButtonText style={[a.text_lg]}>
-                <Trans>Join Bluesky</Trans>
+                <Trans>Join Pulse</Trans>
               </ButtonText>
             </Button>
           ) : null}
@@ -493,7 +493,7 @@ function Header({
                   a.text_sm,
                   t.atoms.text_contrast_medium,
                 ]}>
-                <Trans comment="Number of users (always at least 25) who have joined Bluesky using a specific starter pack">
+                <Trans comment="Number of users (always at least 25) who have joined Pulse using a specific starter pack">
                   <Plural
                     value={starterPack.joinedAllTimeCount || 0}
                     other="# people have"

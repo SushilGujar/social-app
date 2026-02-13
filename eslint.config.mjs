@@ -110,6 +110,7 @@ export default defineConfig(
             'AgeAssuranceAdmonition',
             'Span',
             'StackedButton',
+            'ChatBubble',
           ],
           impliedTextProps: [],
           suggestedTextWrappers: {

@@ -8,7 +8,7 @@ export function GradientFill({
 }: ViewStyleProp & {
   gradient:
     | typeof tokens.gradients.primary
-    | typeof tokens.gradients.sky
+    | typeof tokens.gradients.pulse
     | typeof tokens.gradients.midnight
     | typeof tokens.gradients.sunrise
     | typeof tokens.gradients.sunset

@@ -11,8 +11,7 @@ export const BSKY_SERVICE = 'https://bsky.social'
 export const BSKY_SERVICE_DID = 'did:web:bsky.social'
 export const PUBLIC_BSKY_SERVICE = 'https://public.api.bsky.app'
 export const DEFAULT_SERVICE = BSKY_SERVICE
-const HELP_DESK_LANG = 'en-us'
-export const HELP_DESK_URL = `https://blueskyweb.zendesk.com/hc/${HELP_DESK_LANG}`
+export const HELP_DESK_URL = 'https://pulse.app/support'
 export const EMBED_SERVICE = 'https://embed.bsky.app'
 export const EMBED_SCRIPT = `${EMBED_SERVICE}/static/embed.js`
 export const BSKY_DOWNLOAD_URL = 'https://bsky.app/download'
@@ -39,22 +38,14 @@ export const DISCOVER_DEBUG_DIDS: Record<string, true> = {
   'did:plc:2dzyut5lxna5ljiaasgeuffz': true, // darrin.bsky.team
 }
 
-const BASE_FEEDBACK_FORM_URL = `${HELP_DESK_URL}/requests/new`
 export function FEEDBACK_FORM_URL({
-  email,
-  handle,
+  email: _email,
+  handle: _handle,
 }: {
   email?: string
   handle?: string
 }): string {
-  let str = BASE_FEEDBACK_FORM_URL
-  if (email) {
-    str += `?tf_anonymous_requester_email=${encodeURIComponent(email)}`
-    if (handle) {
-      str += `&tf_17205412673421=${encodeURIComponent(handle)}`
-    }
-  }
-  return str
+  return `${HELP_DESK_URL}/contact`
 }
 
 export const MAX_DISPLAY_NAME = 64
@@ -113,7 +104,7 @@ export function LINK_META_PROXY(serviceUrl: string) {
   return STAGING_LINK_META_PROXY
 }
 
-export const STATUS_PAGE_URL = 'https://status.bsky.app/'
+export const STATUS_PAGE_URL = 'https://pulse.app/status'
 
 // Hitslop constants
 export const createHitslop = (size: number): Insets => ({
@@ -203,14 +194,13 @@ export const EMOJI_REACTION_LIMIT = 5
 export const urls = {
   website: {
     blog: {
-      findFriendsAnnouncement:
-        'https://bsky.social/about/blog/12-16-2025-find-friends',
-      initialVerificationAnnouncement: `https://bsky.social/about/blog/04-21-2025-verification`,
-      searchTipsAndTricks: 'https://bsky.social/about/blog/05-31-2024-search',
+      findFriendsAnnouncement: 'https://pulse.app/blog/find-friends',
+      initialVerificationAnnouncement: 'https://pulse.app/blog/verification',
+      searchTipsAndTricks: 'https://pulse.app/blog/search-tips',
     },
     support: {
       findFriendsPrivacyPolicy:
-        'https://bsky.social/about/support/find-friends-privacy-policy',
+        'https://pulse.app/support/find-friends-privacy-policy',
     },
   },
 }
@@ -246,8 +236,8 @@ export const BLUESKY_NOTIF_SERVICE_HEADERS = {
 }
 
 export const webLinks = {
-  tos: `https://bsky.social/about/support/tos`,
-  privacy: `https://bsky.social/about/support/privacy-policy`,
-  community: `https://bsky.social/about/support/community-guidelines`,
-  communityDeprecated: `https://bsky.social/about/support/community-guidelines-deprecated`,
+  tos: 'https://pulse.app/support/tos',
+  privacy: 'https://pulse.app/support/privacy-policy',
+  community: 'https://pulse.app/support/community-guidelines',
+  communityDeprecated: 'https://pulse.app/support/community-guidelines-deprecated',
 }

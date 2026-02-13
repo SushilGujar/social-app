@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {ActivityIndicator, Keyboard, View} from 'react-native'
+import {ActivityIndicator, View} from 'react-native'
 import {type ComAtprotoServerDescribeServer} from '@atproto/api'
 import {msg, Trans} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
@@ -12,7 +12,6 @@ import {Agent} from '#/state/session/agent'
 import {atoms as a, useTheme} from '#/alf'
 import {Button, ButtonText} from '#/components/Button'
 import {FormError} from '#/components/forms/FormError'
-import {HostingProvider} from '#/components/forms/HostingProvider'
 import * as TextField from '#/components/forms/TextField'
 import {At_Stroke2_Corner0_Rounded as At} from '#/components/icons/At'
 import {Text} from '#/components/Typography'
@@ -41,10 +40,6 @@ export const ForgotPasswordForm = ({
   const [isProcessing, setIsProcessing] = useState<boolean>(false)
   const [email, setEmail] = useState<string>('')
   const {_} = useLingui()
-
-  const onPressSelectService = React.useCallback(() => {
-    Keyboard.dismiss()
-  }, [])
 
   const onPressNext = async () => {
     if (!EmailValidator.validate(email)) {
@@ -78,16 +73,6 @@ export const ForgotPasswordForm = ({
     <FormContainer
       testID="forgotPasswordForm"
       titleText={<Trans>Reset password</Trans>}>
-      <View>
-        <TextField.LabelText>
-          <Trans>Hosting provider</Trans>
-        </TextField.LabelText>
-        <HostingProvider
-          serviceUrl={serviceUrl}
-          onSelectServiceUrl={setServiceUrl}
-          onOpenDialog={onPressSelectService}
-        />
-      </View>
       <View>
         <TextField.LabelText>
           <Trans>Email address</Trans>

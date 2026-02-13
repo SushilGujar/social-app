@@ -26,7 +26,7 @@ export function StepDetails() {
     <ScreenTransition direction={state.transitionDirection} enabledWeb>
       <View style={[a.px_xl, a.gap_xl, a.mt_4xl]}>
         <View style={[a.gap_md, a.align_center, a.px_md, a.mb_md]}>
-          <StarterPack width={90} gradient="sky" />
+          <StarterPack width={90} gradient="pulse" />
           <Text style={[a.font_semi_bold, a.text_3xl]}>
             <Trans>Invites, but personal</Trans>
           </Text>

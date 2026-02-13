@@ -1,5 +1,5 @@
 {
-  "name": "bsky.app",
+  "name": "pulse.app",
   "version": "1.116.0",
   "private": true,
   "engines": {
@@ -258,7 +258,7 @@
     "babel-preset-expo": "~54.0.0",
     "eslint": "^9.39.2",
     "eslint-import-resolver-typescript": "^4.4.4",
-    "eslint-plugin-bsky-internal": "link:./eslint",
+    "eslint-plugin-bsky-internal": "file:./eslint",
     "eslint-plugin-import-x": "^4.16.1",
     "eslint-plugin-lingui": "^0.11.0",
     "eslint-plugin-react": "^7.37.5",

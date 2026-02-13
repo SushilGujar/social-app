@@ -26,10 +26,6 @@ msgstr ""
 msgid "(no email)"
 msgstr ""
 
-#: src/view/com/composer/drafts/DraftItem.tsx:210
-msgid "(No text)"
-msgstr ""
-
 #: src/lib/hooks/useTimeAgo.ts:169
 msgid "{0, plural, one {# day} other {# days}}"
 msgstr ""
@@ -82,8 +78,8 @@ msgstr ""
 msgid "{0, plural, one {# second} other {# seconds}}"
 msgstr ""
 
-#: src/view/shell/bottom-bar/BottomBar.tsx:222
-#: src/view/shell/bottom-bar/BottomBar.tsx:254
+#: src/view/shell/bottom-bar/BottomBar.tsx:223
+#: src/view/shell/bottom-bar/BottomBar.tsx:255
 #: src/view/shell/Drawer.tsx:500
 msgid "{0, plural, one {# unread item} other {# unread items}}"
 msgstr ""
@@ -91,6 +87,10 @@ msgstr ""
 #. How many months have passed, displayed in a narrow form
 #: src/lib/hooks/useTimeAgo.ts:182
 msgid "{0, plural, one {#mo} other {#mo}}"
+msgstr ""
+
+#: src/view/com/composer/drafts/DraftItem.tsx:142
+msgid "{0, plural, one {1 more post} other {# more posts}}"
 msgstr ""
 
 #: src/components/ProfileHoverCard/index.web.tsx:445
@@ -127,7 +127,7 @@ msgstr ""
 msgid "{0, plural, other {{1} posts}}"
 msgstr ""
 
-#. Number of users (always at least 25) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 25) who have joined Pulse using a specific starter pack
 #: src/screens/StarterPack/StarterPackScreen.tsx:496
 msgid "{0, plural, other {# people have}} used this starter pack!"
 msgstr ""
@@ -163,7 +163,7 @@ msgstr ""
 msgid "{0} is live"
 msgstr ""
 
-#: src/screens/Signup/StepHandle/index.tsx:185
+#: src/screens/Signup/StepHandle/index.tsx:189
 msgid "{0} is not available"
 msgstr ""
 
@@ -422,7 +422,7 @@ msgstr ""
 msgid "{hours, plural, one {# hour} other {# hours}}"
 msgstr ""
 
-#. Number of users (always at least 50) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 50) who have joined Pulse using a specific starter pack
 #: src/components/StarterPack/StarterPackCard.tsx:101
 msgid "{joinedAllTimeCount, plural, other {# users have}} joined!"
 msgstr ""
@@ -431,7 +431,7 @@ msgstr ""
 msgid "{minutes, plural, one {# minute} other {# minutes}}"
 msgstr ""
 
-#: src/view/shell/bottom-bar/BottomBarWeb.tsx:277
+#: src/view/shell/bottom-bar/BottomBarWeb.tsx:299
 msgid "{notificationCount, plural, one {# unread item} other {# unread items}}"
 msgstr ""
 
@@ -440,11 +440,11 @@ msgid "{numMatches, plural, one {# contact found} other {# contacts found}}"
 msgstr ""
 
 #: src/components/NewskieDialog.tsx:113
-msgid "{profileName} joined Bluesky {timeAgoString} ago"
+msgid "{profileName} joined Pulse {timeAgoString} ago"
 msgstr ""
 
 #: src/components/NewskieDialog.tsx:110
-msgid "{profileName} joined Bluesky using a starter pack {timeAgoString} ago"
+msgid "{profileName} joined Pulse using a starter pack {timeAgoString} ago"
 msgstr ""
 
 #. The trending topic rank, i.e. "1. March Madness", "2. The Bachelor"
@@ -512,7 +512,7 @@ msgstr ""
 
 #: src/screens/Hashtag.tsx:238
 #: src/screens/Search/SearchResults.tsx:294
-msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Bluesky.</4>"
+msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Pulse.</4>"
 msgstr ""
 
 #: src/screens/StarterPack/Wizard/index.tsx:503
@@ -539,10 +539,6 @@ msgstr ""
 msgid "7 days"
 msgstr ""
 
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:17
-msgid "A collection of popular feeds you can find on Bluesky, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
-msgstr ""
-
 #. If last message does not contain text, fall back to "{user} reacted to {a message}"
 #: src/screens/Messages/components/ChatListItem.tsx:213
 msgid "a message"
@@ -567,7 +563,7 @@ msgstr ""
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
 #: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:146
-msgid "A screenshot of a post from @esb.lol, showing the user is currently livestreaming content on Twitch. The post reads: \"Hello! I'm live on Twitch, and I'm testing Bluesky's latest feature too!\""
+msgid "A screenshot of a post from @esb.lol, showing the user is currently livestreaming content on Twitch. The post reads: \"Hello! I'm live on Twitch, and I'm testing Pulse's latest feature too!\""
 msgstr ""
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
@@ -684,7 +680,7 @@ msgid "Account unmuted"
 msgstr ""
 
 #: src/components/verification/VerifierDialog.tsx:98
-msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Bluesky."
+msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Pulse."
 msgstr ""
 
 #: src/lib/hooks/useNotificationHandler.ts:185
@@ -716,6 +712,10 @@ msgstr ""
 #: src/view/com/composer/labels/LabelsBtn.tsx:106
 #: src/view/com/composer/labels/LabelsBtn.tsx:111
 msgid "Add a content warning"
+msgstr ""
+
+#: src/screens/Onboarding/StepProfile/index.tsx:184
+msgid "Add a profile photo"
 msgstr ""
 
 #: src/components/live/GoLiveDialog.tsx:106
@@ -928,13 +928,10 @@ msgstr ""
 msgid "alice@example.com"
 msgstr ""
 
-#. the default tab in the interests tab bar
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:171
 #: src/view/screens/Notifications.tsx:87
 msgid "All"
 msgstr ""
 
-#: src/screens/Onboarding/StepSuggestedStarterpacks/StarterPackCard.tsx:93
 #: src/screens/StarterPack/StarterPackScreen.tsx:390
 msgid "All accounts have been followed!"
 msgstr ""
@@ -1002,6 +999,10 @@ msgstr ""
 msgid "Allows access to direct messages"
 msgstr ""
 
+#: src/screens/Signup/StepInfo/index.tsx:362
+msgid "Almost there! When's your birthday?"
+msgstr ""
+
 #: src/screens/Login/ForgotPasswordForm.tsx:171
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:236
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:242
@@ -1066,11 +1067,6 @@ msgstr ""
 msgid "An error occurred while compressing the video."
 msgstr ""
 
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:193
-#: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:68
-msgid "An error occurred while fetching suggested accounts."
-msgstr ""
-
 #: src/state/queries/explore-feed-previews.tsx:183
 msgid "An error occurred while fetching the feed."
 msgstr ""
@@ -1099,8 +1095,6 @@ msgstr ""
 msgid "An error occurred while saving the QR code!"
 msgstr ""
 
-#: src/screens/Onboarding/StepSuggestedStarterpacks/StarterPackCard.tsx:53
-#: src/screens/Onboarding/StepSuggestedStarterpacks/StarterPackCard.tsx:78
 #: src/screens/StarterPack/StarterPackScreen.tsx:356
 #: src/screens/StarterPack/StarterPackScreen.tsx:378
 msgid "An error occurred while trying to follow all"
@@ -1118,16 +1112,12 @@ msgstr ""
 
 #: src/components/contacts/components/HeroImage.tsx:28
 #: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:78
-msgid "An illustration depicting user avatars flowing from a contact book into the Bluesky app"
-msgstr ""
-
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:35
-msgid "An illustration of several Bluesky posts alongside repost, like, and comment icons"
+msgid "An illustration depicting user avatars flowing from a contact book into the Pulse app"
 msgstr ""
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:85
 #: src/components/verification/VerifierDialog.tsx:87
-msgid "An illustration showing that Bluesky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
+msgid "An illustration showing that Pulse selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
 msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:239
@@ -1152,7 +1142,7 @@ msgid "An issue occurred, please try again."
 msgstr ""
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:119
-msgid "An mockup of a iPhone showing the Bluesky app open to the profile of a verified user with a blue checkmark next to their display name."
+msgid "An mockup of a iPhone showing the Pulse app open to the profile of a verified user with a blue checkmark next to their display name."
 msgstr ""
 
 #: src/features/liveEvents/components/LiveEventFeedOptionsMenu.tsx:164
@@ -1189,7 +1179,12 @@ msgid "Announcement"
 msgstr ""
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:38
-msgid "Announcing verification on Bluesky"
+msgid "Announcing verification on Pulse"
+msgstr ""
+
+#. Prefixed with "This media is stored on...". Example: "This media is stored on another device"
+#: src/view/com/composer/drafts/DraftItem.tsx:56
+msgid "another device"
 msgstr ""
 
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:454
@@ -1403,9 +1398,10 @@ msgstr ""
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:272
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:281
 #: src/screens/Signup/BackNextButtons.tsx:41
+#: src/screens/Signup/StepInfo/index.tsx:462
 #: src/screens/StarterPack/Wizard/index.tsx:324
-#: src/view/com/composer/drafts/DraftsListDialog.tsx:78
-#: src/view/com/composer/drafts/DraftsListDialog.tsx:84
+#: src/view/com/composer/drafts/DraftsListDialog.tsx:79
+#: src/view/com/composer/drafts/DraftsListDialog.tsx:85
 msgid "Back"
 msgstr ""
 
@@ -1568,76 +1564,6 @@ msgstr ""
 
 #: src/view/com/auth/SplashScreen.web.tsx:179
 msgid "Blog"
-msgstr ""
-
-#: src/components/dialogs/ServerInput.tsx:147
-#: src/components/dialogs/ServerInput.tsx:149
-msgid "Bluesky"
-msgstr ""
-
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:699
-msgid "Bluesky cannot confirm the authenticity of the claimed date."
-msgstr ""
-
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:165
-msgctxt "Name of app icon variant"
-msgid "Bluesky Classic™"
-msgstr ""
-
-#: src/components/contacts/screens/GetContacts.tsx:234
-msgid "Bluesky helps friends find each other by creating an encoded digital fingerprint, called a \"hash\", and then looking for matching hashes."
-msgstr ""
-
-#: src/components/dialogs/ServerInput.tsx:217
-msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-msgstr ""
-
-#: src/components/dialogs/ServerInput.tsx:165
-msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
-msgstr ""
-
-#: src/components/ProgressGuide/List.tsx:103
-msgid "Bluesky is better with friends!"
-msgstr ""
-
-#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:42
-msgid "Bluesky is more fun with friends"
-msgstr ""
-
-#: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:106
-msgid "Bluesky is more fun with friends! Import your contacts to see who’s already here."
-msgstr ""
-
-#: src/components/contacts/screens/ViewMatches.tsx:314
-msgid "Bluesky is more fun with friends. Do you want to invite some of yours? <0/>"
-msgstr ""
-
-#: src/screens/Takendown.tsx:215
-msgid "Bluesky Social Terms of Service"
-msgstr ""
-
-#: src/screens/Settings/FindContactsSettings.tsx:548
-msgid "Bluesky stores your contacts as encoded data. Removing your contacts will immediately delete this data."
-msgstr ""
-
-#: src/components/StarterPack/ProfileStarterPacks.tsx:339
-msgid "Bluesky will choose a set of recommended accounts from people in your network."
-msgstr ""
-
-#: src/screens/Settings/components/PwiOptOut.tsx:99
-msgid "Bluesky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
-msgstr ""
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:133
-msgid "Bluesky will proactively verify notable and authentic accounts."
-msgstr ""
-
-#: src/screens/Settings/AppIconSettings/index.tsx:96
-msgid "Bluesky+"
-msgstr ""
-
-#: src/screens/Settings/AppIconSettings/index.tsx:99
-msgid "Bluesky+ icons"
 msgstr ""
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:56
@@ -1898,7 +1824,7 @@ msgstr ""
 
 #: src/lib/hooks/useNotificationHandler.ts:102
 #: src/Navigation.tsx:560
-#: src/view/shell/bottom-bar/BottomBar.tsx:218
+#: src/view/shell/bottom-bar/BottomBar.tsx:219
 #: src/view/shell/desktop/LeftNav.tsx:608
 #: src/view/shell/Drawer.tsx:468
 msgid "Chat"
@@ -1998,10 +1924,6 @@ msgstr ""
 msgid "Choose Post Languages"
 msgstr ""
 
-#: src/screens/Onboarding/StepProfile/AvatarCreatorItems.tsx:107
-msgid "Choose this color as your avatar"
-msgstr ""
-
 #: src/components/contacts/components/InviteInfo.tsx:56
 msgid "Choose who to invite"
 msgstr ""
@@ -2014,12 +1936,8 @@ msgstr ""
 msgid "Choose your own timeline! Feeds built by the community help you find content you love."
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:271
+#: src/screens/Signup/StepInfo/index.tsx:337
 msgid "Choose your password"
-msgstr ""
-
-#: src/screens/Signup/index.tsx:192
-msgid "Choose your username"
 msgstr ""
 
 #: src/screens/Settings/Settings.tsx:506
@@ -2235,12 +2153,8 @@ msgstr ""
 msgid "Community Guidelines"
 msgstr ""
 
-#: src/screens/Onboarding/StepFinished/index.tsx:325
+#: src/screens/Onboarding/StepFinished/index.tsx:241
 msgid "Complete onboarding and start using your account"
-msgstr ""
-
-#: src/screens/Signup/index.tsx:194
-msgid "Complete the challenge"
 msgstr ""
 
 #: src/view/com/feeds/ComposerPrompt.tsx:146
@@ -2321,12 +2235,11 @@ msgid "Contact our moderation team"
 msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:155
-#: src/screens/Signup/index.tsx:233
-#: src/screens/Signup/index.tsx:236
+#: src/screens/Signup/index.tsx:208
+#: src/screens/Signup/index.tsx:211
 msgid "Contact support"
 msgstr ""
 
-#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:64
 #: src/screens/Settings/FindContactsSettings.tsx:156
 msgid "Contact sync is not available on this device, as the app is unable to access your contacts."
 msgstr ""
@@ -2399,10 +2312,9 @@ msgstr ""
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:162
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:170
-#: src/screens/Onboarding/StepInterests/index.tsx:92
-#: src/screens/Onboarding/StepProfile/index.tsx:287
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:273
-#: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:116
+#: src/screens/Onboarding/StepInterests/index.tsx:93
+#: src/screens/Onboarding/StepProfile/index.tsx:242
+#: src/screens/Signup/StepInfo/index.tsx:490
 msgid "Continue"
 msgstr ""
 
@@ -2418,11 +2330,10 @@ msgstr ""
 msgid "Continue thread..."
 msgstr ""
 
-#: src/screens/Onboarding/StepInterests/index.tsx:89
-#: src/screens/Onboarding/StepProfile/index.tsx:284
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:270
-#: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:113
+#: src/screens/Onboarding/StepInterests/index.tsx:90
+#: src/screens/Onboarding/StepProfile/index.tsx:239
 #: src/screens/Signup/BackNextButtons.tsx:60
+#: src/screens/Signup/StepInfo/index.tsx:480
 msgid "Continue to next step"
 msgstr ""
 
@@ -2656,16 +2567,16 @@ msgstr ""
 #: src/components/WelcomeModal.tsx:165
 #: src/view/com/auth/SplashScreen.tsx:106
 #: src/view/com/auth/SplashScreen.web.tsx:121
-#: src/view/shell/bottom-bar/BottomBar.tsx:342
-#: src/view/shell/bottom-bar/BottomBar.tsx:347
-#: src/view/shell/bottom-bar/BottomBarWeb.tsx:201
-#: src/view/shell/bottom-bar/BottomBarWeb.tsx:206
+#: src/view/shell/bottom-bar/BottomBar.tsx:322
+#: src/view/shell/bottom-bar/BottomBar.tsx:327
+#: src/view/shell/bottom-bar/BottomBarWeb.tsx:220
+#: src/view/shell/bottom-bar/BottomBarWeb.tsx:225
 #: src/view/shell/NavSignupCard.tsx:47
 #: src/view/shell/NavSignupCard.tsx:52
 msgid "Create account"
 msgstr ""
 
-#: src/screens/Signup/index.tsx:135
+#: src/screens/Signup/index.tsx:134
 msgid "Create Account"
 msgstr ""
 
@@ -2679,10 +2590,6 @@ msgstr ""
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:312
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:319
 msgid "Create an account without using this starter pack"
-msgstr ""
-
-#: src/screens/Onboarding/StepProfile/index.tsx:300
-msgid "Create an avatar instead"
 msgstr ""
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:213
@@ -2735,7 +2642,7 @@ msgid "Customization options"
 msgstr ""
 
 #: src/screens/Onboarding/Layout.tsx:60
-msgid "Customizes your Bluesky experience"
+msgid "Customizes your Pulse experience"
 msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:200
@@ -2766,7 +2673,7 @@ msgstr ""
 msgid "Dark theme"
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:299
+#: src/screens/Signup/StepInfo/index.tsx:375
 msgid "Date of birth"
 msgstr ""
 
@@ -2998,7 +2905,7 @@ msgstr ""
 #: src/screens/Profile/Header/EditProfileDialog.tsx:82
 #: src/view/com/composer/Composer.tsx:1172
 #: src/view/com/composer/Composer.tsx:1371
-#: src/view/com/composer/drafts/DraftItem.tsx:90
+#: src/view/com/composer/drafts/DraftItem.tsx:241
 #: src/view/com/composer/drafts/DraftsButton.tsx:112
 msgid "Discard"
 msgstr ""
@@ -3008,7 +2915,7 @@ msgstr ""
 msgid "Discard changes?"
 msgstr ""
 
-#: src/view/com/composer/drafts/DraftItem.tsx:87
+#: src/view/com/composer/drafts/DraftItem.tsx:238
 msgid "Discard draft?"
 msgstr ""
 
@@ -3074,10 +2981,6 @@ msgstr ""
 msgid "Display name"
 msgstr ""
 
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:23
-msgid "Ditch the trolls and clickbait. Find real people and conversations that matter to you."
-msgstr ""
-
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:403
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:405
 msgid "DNS Panel"
@@ -3124,8 +3027,6 @@ msgstr ""
 #: src/components/forms/DateField/index.tsx:103
 #: src/components/forms/DateField/index.tsx:109
 #: src/lib/media/picker.tsx:37
-#: src/screens/Onboarding/StepProfile/index.tsx:337
-#: src/screens/Onboarding/StepProfile/index.tsx:340
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:214
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:221
 #: src/view/com/composer/labels/LabelsBtn.tsx:222
@@ -3158,13 +3059,13 @@ msgstr ""
 msgid "Double tap to like"
 msgstr ""
 
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:331
-msgid "Download Bluesky"
-msgstr ""
-
 #: src/screens/Settings/components/ExportCarDialog.tsx:79
 #: src/screens/Settings/components/ExportCarDialog.tsx:84
 msgid "Download CAR file"
+msgstr ""
+
+#: src/screens/StarterPack/StarterPackLandingScreen.tsx:331
+msgid "Download Pulse"
 msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:115
@@ -3173,7 +3074,7 @@ msgstr ""
 
 #: src/view/com/composer/drafts/DraftsButton.tsx:65
 #: src/view/com/composer/drafts/DraftsButton.tsx:74
-#: src/view/com/composer/drafts/DraftsListDialog.tsx:110
+#: src/view/com/composer/drafts/DraftsListDialog.tsx:111
 msgid "Drafts"
 msgstr ""
 
@@ -3182,7 +3083,7 @@ msgid "Drop to add images"
 msgstr ""
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:11
-msgid "Due to laws in your region, certain features on Bluesky are currently restricted until you're able to verify you're an adult."
+msgid "Due to laws in your region, certain features on Pulse are currently restricted until you're able to verify you're an adult."
 msgstr ""
 
 #: src/components/dialogs/MutedWords.tsx:158
@@ -3333,7 +3234,6 @@ msgid "Either the creator of this list has blocked you or you have blocked the c
 msgstr ""
 
 #: src/screens/Settings/AccountSettings.tsx:66
-#: src/screens/Signup/StepInfo/index.tsx:223
 msgid "Email"
 msgstr ""
 
@@ -3501,8 +3401,12 @@ msgstr ""
 msgid "Enter your birthdate"
 msgstr ""
 
+#: src/screens/Onboarding/StepProfile/index.tsx:164
+msgid "Enter your display name"
+msgstr ""
+
 #: src/screens/Login/ForgotPasswordForm.tsx:99
-#: src/screens/Signup/StepInfo/index.tsx:243
+#: src/screens/Signup/StepInfo/index.tsx:297
 msgid "Enter your email address"
 msgstr ""
 
@@ -3547,7 +3451,7 @@ msgstr ""
 msgid "Error occurred while saving file"
 msgstr ""
 
-#: src/screens/Signup/StepCaptcha/index.tsx:126
+#: src/screens/Signup/StepCaptcha/index.tsx:127
 msgid "Error receiving captcha response."
 msgstr ""
 
@@ -3737,10 +3641,6 @@ msgstr ""
 
 #: src/screens/StarterPack/StarterPackScreen.tsx:729
 msgid "Failed to delete starter pack"
-msgstr ""
-
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:122
-msgid "Failed to follow all suggested accounts, please try again"
 msgstr ""
 
 #: src/components/contacts/screens/ViewMatches.tsx:147
@@ -4017,7 +3917,7 @@ msgstr ""
 msgid "Filter who you receive notifications from"
 msgstr ""
 
-#: src/screens/Onboarding/StepFinished/index.tsx:331
+#: src/screens/Onboarding/StepFinished/index.tsx:245
 msgid "Finalizing"
 msgstr ""
 
@@ -4054,29 +3954,22 @@ msgstr ""
 msgid "Find my friends"
 msgstr ""
 
-#. Starter packs suggested to the user for them to follow
 #: src/components/ProgressGuide/FollowDialog.tsx:78
 #: src/components/ProgressGuide/FollowDialog.tsx:86
 #: src/components/ProgressGuide/FollowDialog.tsx:428
-#: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:42
 msgid "Find people to follow"
 msgstr ""
 
 #: src/screens/Search/Shell.tsx:526
-msgid "Find posts, users, and feeds on Bluesky"
+msgid "Find posts, users, and feeds on Pulse"
 msgstr ""
 
 #: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:96
 msgid "Find your friends"
 msgstr ""
 
-#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:45
 #: src/screens/Settings/FindContactsSettings.tsx:125
-msgid "Find your friends on Bluesky by verifying your phone number and matching with your contacts. We protect your information and you control what happens next. <0>Learn more</0>"
-msgstr ""
-
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:21
-msgid "Find your people"
+msgid "Find your friends on Pulse by verifying your phone number and matching with your contacts. We protect your information and you control what happens next. <0>Learn more</0>"
 msgstr ""
 
 #: src/components/contacts/screens/GetContacts.tsx:280
@@ -4146,18 +4039,11 @@ msgstr ""
 
 #: src/components/contacts/screens/ViewMatches.tsx:275
 #: src/components/contacts/screens/ViewMatches.tsx:290
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:262
-#: src/screens/Onboarding/StepSuggestedStarterpacks/StarterPackCard.tsx:158
-#: src/screens/Onboarding/StepSuggestedStarterpacks/StarterPackCard.tsx:165
 #: src/screens/Settings/FindContactsSettings.tsx:443
 #: src/screens/Settings/FindContactsSettings.tsx:453
 #: src/screens/StarterPack/StarterPackScreen.tsx:442
 #: src/screens/StarterPack/StarterPackScreen.tsx:450
 msgid "Follow all"
-msgstr ""
-
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:259
-msgid "Follow all accounts"
 msgstr ""
 
 #. User is not following this account, click to follow back
@@ -4167,10 +4053,6 @@ msgstr ""
 #: src/view/com/notifications/NotificationFeedItem.tsx:841
 #: src/view/com/notifications/NotificationFeedItem.tsx:848
 msgid "Follow back"
-msgstr ""
-
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:117
-msgid "Followed all accounts!"
 msgstr ""
 
 #: src/screens/Settings/FindContactsSettings.tsx:396
@@ -4277,17 +4159,12 @@ msgstr ""
 msgid "For the best experience, we recommend using the theme font."
 msgstr ""
 
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:317
 #: src/screens/Search/modules/ExploreSuggestedAccounts.tsx:88
 msgid "For You"
 msgstr ""
 
 #: src/components/dialogs/MutedWords.tsx:183
 msgid "Forever"
-msgstr ""
-
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:30
-msgid "Forget the noise"
 msgstr ""
 
 #: src/screens/Login/index.tsx:168
@@ -4301,10 +4178,6 @@ msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:269
 msgid "Forgot?"
-msgstr ""
-
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:12
-msgid "Free your feed"
 msgstr ""
 
 #: src/screens/Settings/NotificationSettings/components/PreferenceControls.tsx:158
@@ -4393,10 +4266,6 @@ msgstr ""
 msgid "GIF"
 msgstr ""
 
-#: src/screens/Onboarding/StepProfile/index.tsx:242
-msgid "Give your profile a face"
-msgstr ""
-
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:142
 msgid "Glorification of violence"
 msgstr ""
@@ -4433,6 +4302,7 @@ msgstr ""
 #: src/screens/Onboarding/Layout.tsx:97
 #: src/screens/Onboarding/Layout.tsx:198
 #: src/screens/Signup/BackNextButtons.tsx:35
+#: src/screens/Signup/StepInfo/index.tsx:456
 msgid "Go back to previous step"
 msgstr ""
 
@@ -4520,6 +4390,14 @@ msgstr ""
 msgid "Graphic violent content"
 msgstr ""
 
+#: src/screens/Onboarding/StepInterests/index.tsx:78
+msgid "Great taste! We'll customize your feed based on these."
+msgstr ""
+
+#: src/screens/Signup/StepInfo/index.tsx:317
+msgid "Great! Now choose a secure password."
+msgstr ""
+
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:169
 msgid "Grooming or predatory behavior"
 msgstr ""
@@ -4589,16 +4467,16 @@ msgstr ""
 msgid "Have a code? <0>Click here.</0>"
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:330
+#: src/screens/Signup/StepInfo/index.tsx:406
 msgid "Have we got your location wrong? <0>Tap here to confirm your location with GPS.</0>"
 msgstr ""
 
-#: src/screens/Signup/index.tsx:231
+#: src/screens/Signup/index.tsx:206
 msgid "Having trouble?"
 msgstr ""
 
 #: src/components/contacts/screens/PhoneInput.tsx:289
-msgid "Held by Bluesky for 7 days to prevent abuse, then deleted"
+msgid "Held by Pulse for 7 days to prevent abuse, then deleted"
 msgstr ""
 
 #: src/screens/Settings/Settings.tsx:252
@@ -4607,10 +4485,6 @@ msgstr ""
 #: src/view/shell/desktop/RightNav.tsx:131
 #: src/view/shell/Drawer.tsx:383
 msgid "Help"
-msgstr ""
-
-#: src/screens/Onboarding/StepProfile/index.tsx:245
-msgid "Help people know you're not a bot by uploading a picture or creating an avatar."
 msgstr ""
 
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:187
@@ -4773,7 +4647,7 @@ msgstr ""
 
 #: src/Navigation.tsx:784
 #: src/Navigation.tsx:804
-#: src/view/shell/bottom-bar/BottomBar.tsx:175
+#: src/view/shell/bottom-bar/BottomBar.tsx:176
 #: src/view/shell/desktop/LeftNav.tsx:669
 #: src/view/shell/Drawer.tsx:442
 msgid "Home"
@@ -4810,7 +4684,7 @@ msgid "Human trafficking"
 msgstr ""
 
 #: src/components/contacts/screens/GetContacts.tsx:266
-msgid "I consent to Bluesky using my contacts for mutual friend discovery and to retain hashed data for matching until I opt out."
+msgid "I consent to Pulse using my contacts for mutual friend discovery and to retain hashed data for matching until I opt out."
 msgstr ""
 
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:133
@@ -4829,14 +4703,14 @@ msgid "I understand"
 msgstr ""
 
 #: src/components/contacts/screens/ViewMatches.tsx:577
-msgid "I'm on Bluesky as {0} - come find me! https://bsky.app/download"
+msgid "I'm on Pulse as {0} - come find me!"
 msgstr ""
 
 #: src/view/com/lightbox/Lightbox.web.tsx:194
 msgid "If alt text is long, toggles alt text expanded state"
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:349
+#: src/screens/Signup/StepInfo/index.tsx:426
 msgid "If you are not yet an adult according to the laws of your country, your parent or legal guardian must read these Terms on your behalf."
 msgstr ""
 
@@ -4915,8 +4789,6 @@ msgstr ""
 msgid "Impersonation"
 msgstr ""
 
-#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:75
-#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:80
 #: src/screens/Settings/FindContactsSettings.tsx:145
 #: src/screens/Settings/FindContactsSettings.tsx:150
 msgid "Import contacts"
@@ -5049,10 +4921,10 @@ msgid "Invite"
 msgstr ""
 
 #: src/components/contacts/screens/ViewMatches.tsx:566
-msgid "Invite {name} to join Bluesky"
+msgid "Invite {name} to join Pulse"
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:193
+#: src/screens/Signup/StepInfo/index.tsx:242
 msgid "Invite code"
 msgstr ""
 
@@ -5090,7 +4962,7 @@ msgstr ""
 msgid "It looks like some of your contacts have not tried to find you here yet. You can personally invite them by customizing a draft message we will provide."
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:382
+#: src/screens/Signup/StepInfo/index.tsx:488
 msgid "It's correct"
 msgstr ""
 
@@ -5106,7 +4978,7 @@ msgstr ""
 msgid "Job ID: {0}"
 msgstr ""
 
-#. Link to a page with job openings at Bluesky
+#. Link to a page with job openings at Pulse
 #: src/view/com/auth/SplashScreen.web.tsx:184
 msgid "Jobs"
 msgstr ""
@@ -5115,7 +4987,7 @@ msgstr ""
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:216
 #: src/screens/StarterPack/StarterPackScreen.tsx:468
 #: src/screens/StarterPack/StarterPackScreen.tsx:479
-msgid "Join Bluesky"
+msgid "Join Pulse"
 msgstr ""
 
 #: src/components/StarterPack/QrCode.tsx:73
@@ -5212,19 +5084,18 @@ msgstr ""
 msgid "Learn more about age assurance"
 msgstr ""
 
-#: src/view/com/auth/SplashScreen.web.tsx:172
-msgid "Learn more about Bluesky"
-msgstr ""
-
 #: src/components/contacts/components/InviteInfo.tsx:32
 msgid "Learn more about how inviting friends works"
 msgstr ""
 
 #: src/components/contacts/screens/PhoneInput.tsx:302
-#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:52
 #: src/screens/Settings/FindContactsSettings.tsx:132
 msgctxt "english-only-resource"
 msgid "Learn more about importing contacts"
+msgstr ""
+
+#: src/view/com/auth/SplashScreen.web.tsx:172
+msgid "Learn more about Pulse"
 msgstr ""
 
 #: src/components/dialogs/ServerInput.tsx:223
@@ -5252,12 +5123,12 @@ msgstr ""
 #: src/components/verification/VerificationsDialog.tsx:152
 #: src/components/verification/VerifierDialog.tsx:120
 msgctxt "english-only-resource"
-msgid "Learn more about verification on Bluesky"
+msgid "Learn more about verification on Pulse"
 msgstr ""
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:127
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:130
-msgid "Learn more about what is public on Bluesky."
+msgid "Learn more about what is public on Pulse."
 msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceAdmonition.tsx:89
@@ -5292,7 +5163,7 @@ msgstr ""
 
 #: src/components/dialogs/LinkWarning.tsx:67
 #: src/components/dialogs/LinkWarning.tsx:75
-msgid "Leaving Bluesky"
+msgid "Leaving Pulse"
 msgstr ""
 
 #: src/screens/SignupQueued.tsx:155
@@ -5303,12 +5174,16 @@ msgstr ""
 msgid "Let me choose"
 msgstr ""
 
+#: src/screens/Signup/StepInfo/index.tsx:274
+msgid "Let's get you started! What's your email?"
+msgstr ""
+
 #: src/screens/Login/index.tsx:169
 #: src/screens/Login/index.tsx:184
 msgid "Let's get your password reset!"
 msgstr ""
 
-#: src/screens/Onboarding/StepFinished/index.tsx:333
+#: src/screens/Onboarding/StepFinished/index.tsx:247
 msgid "Let's go!"
 msgstr ""
 
@@ -5661,6 +5536,11 @@ msgstr ""
 msgid "Media"
 msgstr ""
 
+#. This media is stored on... Example: "This media is stored on John's iPhone"
+#: src/view/com/composer/drafts/DraftItem.tsx:119
+msgid "Media stored on {deviceName}"
+msgstr ""
+
 #: src/view/com/composer/labels/LabelsBtn.tsx:209
 msgid "Media that may be disturbing or inappropriate for some audiences."
 msgstr ""
@@ -5739,6 +5619,10 @@ msgstr ""
 msgid "Misleading"
 msgstr ""
 
+#: src/view/com/composer/drafts/DraftItem.tsx:130
+msgid "Missing media"
+msgstr ""
+
 #: src/Navigation.tsx:180
 #: src/screens/Moderation/index.tsx:99
 #: src/screens/Settings/Settings.tsx:192
@@ -5811,7 +5695,7 @@ msgid "More languages..."
 msgstr ""
 
 #: src/screens/ProfileList/components/MoreOptionsMenu.tsx:143
-#: src/view/com/composer/drafts/DraftItem.tsx:184
+#: src/view/com/composer/drafts/DraftItem.tsx:189
 #: src/view/com/profile/ProfileMenu.tsx:242
 #: src/view/com/profile/ProfileMenu.tsx:249
 msgid "More options"
@@ -6097,8 +5981,6 @@ msgstr ""
 #: src/screens/Login/LoginForm.tsx:353
 #: src/screens/Login/SetNewPasswordForm.tsx:182
 #: src/screens/Login/SetNewPasswordForm.tsx:188
-#: src/screens/Onboarding/StepFinished/index.tsx:326
-#: src/screens/Onboarding/StepFinished/index.tsx:335
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:157
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:165
 #: src/screens/Signup/BackNextButtons.tsx:67
@@ -6113,8 +5995,8 @@ msgstr ""
 msgid "Next image"
 msgstr ""
 
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:32
-msgid "No ads, no invasive tracking, no engagement traps. Bluesky respects your time and attention."
+#: src/screens/Onboarding/StepProfile/index.tsx:176
+msgid "Nice to meet you{0}! Want to add a profile photo?"
 msgstr ""
 
 #: src/screens/Settings/AppPasswords.tsx:107
@@ -6138,7 +6020,7 @@ msgstr ""
 msgid "No DNS Panel"
 msgstr ""
 
-#: src/view/com/composer/drafts/DraftsListDialog.tsx:134
+#: src/view/com/composer/drafts/DraftsListDialog.tsx:135
 msgid "No drafts yet"
 msgstr ""
 
@@ -6184,10 +6066,6 @@ msgstr ""
 
 #: src/screens/Messages/components/ChatListItem.tsx:142
 msgid "No messages yet"
-msgstr ""
-
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:14
-msgid "No more doomscrolling junk-filled algorithms. Find feeds that work for you, not against you."
 msgstr ""
 
 #: src/components/contacts/screens/ViewMatches.tsx:562
@@ -6331,7 +6209,7 @@ msgid "Note about sharing"
 msgstr ""
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:116
-msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
+msgid "Note: Pulse is an open and public network. This setting only limits the visibility of your content on the Pulse app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
 msgstr ""
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:134
@@ -6378,7 +6256,7 @@ msgstr ""
 #: src/screens/Settings/Settings.tsx:200
 #: src/screens/Settings/Settings.tsx:203
 #: src/view/screens/Notifications.tsx:129
-#: src/view/shell/bottom-bar/BottomBar.tsx:249
+#: src/view/shell/bottom-bar/BottomBar.tsx:250
 #: src/view/shell/desktop/LeftNav.tsx:706
 #: src/view/shell/Drawer.tsx:495
 msgid "Notifications"
@@ -6394,6 +6272,10 @@ msgstr ""
 
 #: src/components/dms/MessageItem.tsx:275
 msgid "Now"
+msgstr ""
+
+#: src/screens/Signup/StepHandle/index.tsx:144
+msgid "Now let's pick a username for you."
 msgstr ""
 
 #: src/view/com/composer/labels/LabelsBtn.tsx:149
@@ -6445,6 +6327,10 @@ msgstr ""
 msgid "Onboarding reset"
 msgstr ""
 
+#: src/screens/Signup/StepCaptcha/index.tsx:152
+msgid "One last thing — please complete this quick verification."
+msgstr ""
+
 #: src/view/com/composer/Composer.tsx:707
 msgid "One or more GIFs is missing alt text."
 msgstr ""
@@ -6465,7 +6351,7 @@ msgstr ""
 msgid "One or more videos is missing alt text."
 msgstr ""
 
-#: src/screens/Onboarding/StepProfile/index.tsx:118
+#: src/screens/Onboarding/StepProfile/index.tsx:80
 msgid "Only .jpg and .png files are supported"
 msgstr ""
 
@@ -6500,10 +6386,6 @@ msgstr ""
 msgid "Oops!"
 msgstr ""
 
-#: src/screens/Onboarding/StepProfile/index.tsx:294
-msgid "Open avatar creator"
-msgstr ""
-
 #: src/view/com/feeds/ComposerPrompt.tsx:201
 msgid "Open camera"
 msgstr ""
@@ -6513,7 +6395,7 @@ msgstr ""
 msgid "Open conversation options"
 msgstr ""
 
-#: src/view/com/composer/drafts/DraftItem.tsx:44
+#: src/view/com/composer/drafts/DraftItem.tsx:75
 msgid "Open draft"
 msgstr ""
 
@@ -6636,12 +6518,12 @@ msgstr ""
 
 #: src/view/com/auth/SplashScreen.tsx:101
 #: src/view/com/auth/SplashScreen.web.tsx:115
-msgid "Opens flow to create a new Bluesky account"
+msgid "Opens flow to create a new Pulse account"
 msgstr ""
 
 #: src/view/com/auth/SplashScreen.tsx:119
 #: src/view/com/auth/SplashScreen.web.tsx:129
-msgid "Opens flow to sign in to your existing Bluesky account"
+msgid "Opens flow to sign in to your existing Pulse account"
 msgstr ""
 
 #: src/view/com/composer/photos/SelectGifBtn.tsx:37
@@ -6676,7 +6558,7 @@ msgstr ""
 msgid "Opens the post composer"
 msgstr ""
 
-#: src/view/com/composer/drafts/DraftItem.tsx:45
+#: src/view/com/composer/drafts/DraftItem.tsx:76
 msgid "Opens this draft in the composer"
 msgstr ""
 
@@ -6761,7 +6643,7 @@ msgid "Our moderation team has received your report."
 msgstr ""
 
 #: src/screens/Messages/components/ChatDisabled.tsx:34
-msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
+msgid "Our moderators have reviewed reports and decided to disable your access to chats on Pulse."
 msgstr ""
 
 #: src/components/Lists.tsx:204
@@ -6777,7 +6659,6 @@ msgstr ""
 #: src/screens/Login/LoginForm.tsx:229
 #: src/screens/Settings/AccountSettings.tsx:121
 #: src/screens/Settings/AccountSettings.tsx:125
-#: src/screens/Signup/StepInfo/index.tsx:258
 #: src/view/com/modals/DeleteAccount.tsx:239
 #: src/view/com/modals/DeleteAccount.tsx:246
 msgid "Password"
@@ -6958,12 +6839,12 @@ msgid "Please choose your handle."
 msgstr ""
 
 #: src/screens/Signup/state.ts:285
-#: src/screens/Signup/StepInfo/index.tsx:153
+#: src/screens/Signup/StepInfo/index.tsx:169
 msgid "Please choose your password."
 msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:290
-msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Bluesky."
+msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Pulse."
 msgstr ""
 
 #: src/screens/Signup/state.ts:308
@@ -6971,7 +6852,7 @@ msgid "Please complete the verification captcha."
 msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:101
-#: src/screens/Signup/StepInfo/index.tsx:142
+#: src/screens/Signup/StepInfo/index.tsx:147
 msgid "Please double-check that you have entered your email address correctly."
 msgstr ""
 
@@ -7019,11 +6900,11 @@ msgid "Please enter the security code we sent to your previous email address."
 msgstr ""
 
 #: src/screens/Signup/state.ts:269
-#: src/screens/Signup/StepInfo/index.tsx:124
+#: src/screens/Signup/StepInfo/index.tsx:129
 msgid "Please enter your email."
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:117
+#: src/screens/Signup/StepInfo/index.tsx:122
 msgid "Please enter your invite code."
 msgstr ""
 
@@ -7242,6 +7123,7 @@ msgstr ""
 #: src/components/Lists.tsx:103
 #: src/screens/Messages/components/MessageListError.tsx:24
 #: src/screens/Signup/BackNextButtons.tsx:47
+#: src/screens/Signup/StepInfo/index.tsx:467
 msgid "Press to retry"
 msgstr ""
 
@@ -7316,7 +7198,7 @@ msgstr ""
 msgid "profile"
 msgstr ""
 
-#: src/view/shell/bottom-bar/BottomBar.tsx:313
+#: src/view/shell/bottom-bar/BottomBar.tsx:293
 #: src/view/shell/desktop/LeftNav.tsx:784
 #: src/view/shell/Drawer.tsx:79
 #: src/view/shell/Drawer.tsx:598
@@ -7360,6 +7242,72 @@ msgstr ""
 msgid "Publish reply"
 msgstr ""
 
+#: src/components/dialogs/ServerInput.tsx:147
+#: src/components/dialogs/ServerInput.tsx:149
+msgid "Pulse"
+msgstr ""
+
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:699
+msgid "Pulse cannot confirm the authenticity of the claimed date."
+msgstr ""
+
+#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:165
+msgctxt "Name of app icon variant"
+msgid "Pulse Classic™"
+msgstr ""
+
+#: src/components/contacts/screens/GetContacts.tsx:234
+msgid "Pulse helps friends find each other by creating an encoded digital fingerprint, called a \"hash\", and then looking for matching hashes."
+msgstr ""
+
+#: src/components/dialogs/ServerInput.tsx:217
+msgid "Pulse is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
+msgstr ""
+
+#: src/components/dialogs/ServerInput.tsx:165
+msgid "Pulse is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Pulse option."
+msgstr ""
+
+#: src/components/ProgressGuide/List.tsx:103
+msgid "Pulse is better with friends!"
+msgstr ""
+
+#: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:106
+msgid "Pulse is more fun with friends! Import your contacts to see who’s already here."
+msgstr ""
+
+#: src/components/contacts/screens/ViewMatches.tsx:314
+msgid "Pulse is more fun with friends. Do you want to invite some of yours? <0/>"
+msgstr ""
+
+#: src/screens/Settings/FindContactsSettings.tsx:548
+msgid "Pulse stores your contacts as encoded data. Removing your contacts will immediately delete this data."
+msgstr ""
+
+#: src/screens/Takendown.tsx:215
+msgid "Pulse Terms of Service"
+msgstr ""
+
+#: src/components/StarterPack/ProfileStarterPacks.tsx:339
+msgid "Pulse will choose a set of recommended accounts from people in your network."
+msgstr ""
+
+#: src/screens/Settings/components/PwiOptOut.tsx:99
+msgid "Pulse will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
+msgstr ""
+
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:133
+msgid "Pulse will proactively verify notable and authentic accounts."
+msgstr ""
+
+#: src/screens/Settings/AppIconSettings/index.tsx:96
+msgid "Pulse+"
+msgstr ""
+
+#: src/screens/Settings/AppIconSettings/index.tsx:99
+msgid "Pulse+ icons"
+msgstr ""
+
 #: src/screens/Settings/NotificationSettings/index.tsx:286
 msgid "Push"
 msgstr ""
@@ -7396,6 +7344,7 @@ msgstr ""
 #: src/components/PostControls/RepostButton.tsx:198
 #: src/components/PostControls/RepostButton.web.tsx:85
 #: src/components/PostControls/RepostButton.web.tsx:92
+#: src/view/com/composer/drafts/DraftItem.tsx:136
 msgid "Quote post"
 msgstr ""
 
@@ -7477,17 +7426,17 @@ msgid "Read our blog post"
 msgstr ""
 
 #: src/view/com/auth/SplashScreen.web.tsx:177
-msgid "Read the Bluesky blog"
+msgid "Read the Pulse blog"
 msgstr ""
 
 #: src/screens/Signup/StepInfo/Policies.tsx:52
 #: src/screens/Signup/StepInfo/Policies.tsx:78
-msgid "Read the Bluesky Privacy Policy"
+msgid "Read the Pulse Privacy Policy"
 msgstr ""
 
 #: src/screens/Signup/StepInfo/Policies.tsx:45
 #: src/screens/Signup/StepInfo/Policies.tsx:65
-msgid "Read the Bluesky Terms of Service"
+msgid "Read the Pulse Terms of Service"
 msgstr ""
 
 #: src/components/WelcomeModal.tsx:148
@@ -7956,7 +7905,7 @@ msgstr ""
 msgid "Require an email code to sign in to your account."
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:207
+#: src/screens/Signup/StepInfo/index.tsx:257
 msgid "Required for this provider"
 msgstr ""
 
@@ -8038,13 +7987,10 @@ msgstr ""
 #: src/screens/Messages/ChatList.tsx:292
 #: src/screens/Messages/components/MessageListError.tsx:25
 #: src/screens/Messages/Inbox.tsx:219
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:236
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:239
-#: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:91
-#: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:94
 #: src/screens/PostThread/components/ThreadError.tsx:80
 #: src/screens/PostThread/components/ThreadError.tsx:86
 #: src/screens/Signup/BackNextButtons.tsx:53
+#: src/screens/Signup/StepInfo/index.tsx:473
 #: src/view/com/util/error/ErrorMessage.tsx:60
 #: src/view/com/util/error/ErrorScreen.tsx:97
 #: src/view/screens/Storybook/Admonitions.tsx:63
@@ -8208,7 +8154,7 @@ msgstr ""
 #: src/components/forms/SearchInput.tsx:36
 #: src/screens/Search/Shell.tsx:327
 #: src/screens/Search/Shell.tsx:514
-#: src/view/shell/bottom-bar/BottomBar.tsx:195
+#: src/view/shell/bottom-bar/BottomBar.tsx:196
 msgid "Search"
 msgstr ""
 
@@ -8333,7 +8279,7 @@ msgid "See #{tag} posts by user"
 msgstr ""
 
 #: src/view/com/auth/SplashScreen.web.tsx:182
-msgid "See jobs at Bluesky"
+msgid "See jobs at Pulse"
 msgstr ""
 
 #: src/components/FeedInterstitials.tsx:720
@@ -8372,10 +8318,6 @@ msgstr ""
 msgid "Select {langName}"
 msgstr ""
 
-#: src/screens/Onboarding/StepProfile/AvatarCreatorItems.tsx:67
-msgid "Select a color"
-msgstr ""
-
 #: src/components/moderation/ReportDialog/index.tsx:366
 msgid "Select a reason"
 msgstr ""
@@ -8386,14 +8328,6 @@ msgstr ""
 
 #: src/components/AppLanguageDropdown.tsx:61
 msgid "Select an app language"
-msgstr ""
-
-#: src/screens/Onboarding/StepProfile/AvatarCircle.tsx:66
-msgid "Select an avatar"
-msgstr ""
-
-#: src/screens/Onboarding/StepProfile/AvatarCreatorItems.tsx:65
-msgid "Select an emoji"
 msgstr ""
 
 #: src/components/Select/index.tsx:199
@@ -8472,10 +8406,6 @@ msgstr ""
 msgid "Select telephone code"
 msgstr ""
 
-#: src/screens/Onboarding/StepProfile/AvatarCreatorItems.tsx:83
-msgid "Select the {emojiName} emoji as your avatar"
-msgstr ""
-
 #: src/view/com/composer/select-language/PostLanguageSelectDialog.tsx:194
 msgid "Select up to 3 languages used in this post"
 msgstr ""
@@ -8492,11 +8422,11 @@ msgstr ""
 msgid "Select which languages you want your subscribed feeds to include. If none are selected, all languages will be shown."
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:300
+#: src/screens/Signup/StepInfo/index.tsx:376
 msgid "Select your date of birth"
 msgstr ""
 
-#: src/screens/Onboarding/StepInterests/index.tsx:68
+#: src/screens/Onboarding/StepInterests/index.tsx:62
 #: src/screens/Settings/InterestsSettings.tsx:165
 msgid "Select your interests from the options below"
 msgstr ""
@@ -8739,7 +8669,7 @@ msgid "Share this starter pack"
 msgstr ""
 
 #: src/components/StarterPack/ShareDialog.tsx:85
-msgid "Share this starter pack and help people join your community on Bluesky."
+msgid "Share this starter pack and help people join your community on Pulse."
 msgstr ""
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:118
@@ -8899,10 +8829,10 @@ msgstr ""
 #: src/view/com/auth/SplashScreen.tsx:123
 #: src/view/com/auth/SplashScreen.web.tsx:127
 #: src/view/com/auth/SplashScreen.web.tsx:135
-#: src/view/shell/bottom-bar/BottomBar.tsx:352
-#: src/view/shell/bottom-bar/BottomBar.tsx:357
-#: src/view/shell/bottom-bar/BottomBarWeb.tsx:211
-#: src/view/shell/bottom-bar/BottomBarWeb.tsx:216
+#: src/view/shell/bottom-bar/BottomBar.tsx:332
+#: src/view/shell/bottom-bar/BottomBar.tsx:337
+#: src/view/shell/bottom-bar/BottomBarWeb.tsx:230
+#: src/view/shell/bottom-bar/BottomBarWeb.tsx:235
 #: src/view/shell/NavSignupCard.tsx:57
 #: src/view/shell/NavSignupCard.tsx:62
 msgid "Sign in"
@@ -8930,7 +8860,7 @@ msgid "Sign in to account that is not listed"
 msgstr ""
 
 #: src/components/dialogs/Signin.tsx:46
-msgid "Sign in to Bluesky or create a new account"
+msgid "Sign in to Pulse or create a new account"
 msgstr ""
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:522
@@ -8971,12 +8901,6 @@ msgstr ""
 
 #: src/components/contacts/screens/PhoneInput.tsx:162
 #: src/components/contacts/screens/VerifyNumber.tsx:204
-#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:85
-#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:89
-#: src/screens/Onboarding/StepFinished/index.tsx:291
-#: src/screens/Onboarding/StepFinished/index.tsx:313
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:249
-#: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:104
 #: src/screens/StarterPack/Wizard/index.tsx:219
 msgid "Skip"
 msgstr ""
@@ -8984,16 +8908,6 @@ msgstr ""
 #: src/components/contacts/screens/PhoneInput.tsx:159
 #: src/components/contacts/screens/VerifyNumber.tsx:201
 msgid "Skip contact sharing and continue to the app"
-msgstr ""
-
-#: src/screens/Onboarding/StepFinished/index.tsx:284
-#: src/screens/Onboarding/StepFinished/index.tsx:310
-msgid "Skip introduction and start using your account"
-msgstr ""
-
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:246
-#: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:101
-msgid "Skip to next step"
 msgstr ""
 
 #: src/screens/Settings/AppearanceSettings.tsx:152
@@ -9010,10 +8924,6 @@ msgstr ""
 
 #: src/lib/interests.ts:58
 msgid "Software Dev"
-msgstr ""
-
-#: src/view/com/composer/drafts/DraftItem.tsx:67
-msgid "Some media unavailable (saved on another device)"
 msgstr ""
 
 #: src/components/verification/VerificationsDialog.tsx:121
@@ -9071,10 +8981,6 @@ msgstr ""
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:541
 msgid "Something wrong? Let us know."
-msgstr ""
-
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:201
-msgid "Sorry, we're unable to load account suggestions at this time."
 msgstr ""
 
 #: src/App.native.tsx:137
@@ -9180,7 +9086,6 @@ msgid "Status Page"
 msgstr ""
 
 #: src/screens/Onboarding/Layout.tsx:226
-#: src/screens/Signup/index.tsx:180
 msgid "Step {0} of {1}"
 msgstr ""
 
@@ -9198,7 +9103,7 @@ msgid "Storybook"
 msgstr ""
 
 #: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:180
-msgid "Streaming on Twitch? Set your live status on Bluesky to add a badge to your avatar. Tapping it takes people straight to your stream."
+msgid "Streaming on Twitch? Set your live status on Pulse to add a badge to your avatar. Tapping it takes people straight to your stream."
 msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:119
@@ -9268,9 +9173,7 @@ msgstr ""
 msgid "Suggested Accounts"
 msgstr ""
 
-#. Accounts suggested to the user for them to follow
 #: src/components/FeedInterstitials.tsx:698
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:152
 msgid "Suggested for you"
 msgstr ""
 
@@ -9338,7 +9241,7 @@ msgid "Tags only"
 msgstr ""
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:109
-msgid "Tap below to allow Bluesky to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
+msgid "Tap below to allow Pulse to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
 msgstr ""
 
 #: src/view/com/feeds/MissingFeed.tsx:89
@@ -9349,12 +9252,12 @@ msgstr ""
 msgid "Tap for more information"
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:334
+#: src/screens/Signup/StepInfo/index.tsx:410
 msgid "Tap here to confirm your location with GPS."
 msgstr ""
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:164
-msgid "Tap to acknowledge that you understand and agree to these updates and continue using Bluesky"
+msgid "Tap to acknowledge that you understand and agree to these updates and continue using Pulse"
 msgstr ""
 
 #: src/components/ContextMenu/Backdrop.ios.tsx:54
@@ -9365,6 +9268,10 @@ msgstr ""
 
 #: src/components/ProgressGuide/Toast.tsx:156
 msgid "Tap to dismiss"
+msgstr ""
+
+#: src/screens/Onboarding/StepProfile/index.tsx:208
+msgid "Tap to upload"
 msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:107
@@ -9452,7 +9359,7 @@ msgstr ""
 msgid "That starter pack could not be found."
 msgstr ""
 
-#: src/screens/Signup/StepHandle/index.tsx:80
+#: src/screens/Signup/StepHandle/index.tsx:81
 msgid "That username is already taken"
 msgstr ""
 
@@ -9484,10 +9391,6 @@ msgstr ""
 msgid "The birthdate you've entered means you are under 18 years old. Certain content and features may be unavailable to you."
 msgstr ""
 
-#: src/screens/Moderation/index.tsx:397
-msgid "The Bluesky web application"
-msgstr ""
-
 #: src/view/screens/CommunityGuidelines.tsx:41
 msgid "The Community Guidelines have been moved to <0/>"
 msgstr ""
@@ -9505,7 +9408,7 @@ msgid "The Discover feed now knows what you like"
 msgstr ""
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:334
-msgid "The experience is better in the app. Download Bluesky now and we'll pick back up where you left off."
+msgid "The experience is better in the app. Download Pulse now and we'll pick back up where you left off."
 msgstr ""
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:67
@@ -9538,6 +9441,10 @@ msgstr ""
 
 #: src/view/screens/PrivacyPolicy.tsx:38
 msgid "The Privacy Policy has been moved to <0/>"
+msgstr ""
+
+#: src/screens/Moderation/index.tsx:397
+msgid "The Pulse web application"
 msgstr ""
 
 #: src/view/com/composer/state/video.ts:395
@@ -9682,7 +9589,7 @@ msgid "There was an unexpected issue in the application. Please let us know if t
 msgstr ""
 
 #: src/screens/SignupQueued.tsx:130
-msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
+msgid "There's been a rush of new users to Pulse! We'll activate your account as soon as we can."
 msgstr ""
 
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:657
@@ -9723,7 +9630,7 @@ msgstr ""
 
 #: src/components/live/GoLiveDisabledDialog.tsx:113
 #: src/screens/Messages/components/ChatDisabled.tsx:116
-msgid "This appeal will be sent to Bluesky's moderation service."
+msgid "This appeal will be sent to Pulse's moderation service."
 msgstr ""
 
 #: src/screens/PostThread/components/ThreadItemAnchorNoUnauthenticated.tsx:27
@@ -9761,14 +9668,14 @@ msgid "This content is not available because one of the users involved has block
 msgstr ""
 
 #: src/view/com/posts/PostFeedErrorMessage.tsx:121
-msgid "This content is not viewable without a Bluesky account."
+msgid "This content is not viewable without a Pulse account."
 msgstr ""
 
 #: src/screens/Messages/components/ChatListItem.tsx:366
 msgid "This conversation is with a deleted or a deactivated account. Press for options"
 msgstr ""
 
-#: src/view/com/composer/drafts/DraftItem.tsx:88
+#: src/view/com/composer/drafts/DraftItem.tsx:239
 msgid "This draft will be permanently deleted."
 msgstr ""
 
@@ -9844,11 +9751,11 @@ msgid "This link is taking you to the following website:"
 msgstr ""
 
 #: src/screens/List/ListHiddenScreen.tsx:151
-msgid "This list – created by <0>{0}</0> – contains possible violations of Bluesky's community guidelines in its name or description."
+msgid "This list – created by <0>{0}</0> – contains possible violations of Pulse's community guidelines in its name or description."
 msgstr ""
 
 #: src/screens/List/ListHiddenScreen.tsx:146
-msgid "This list – created by you – contains possible violations of Bluesky's community guidelines in its name or description."
+msgid "This list – created by you – contains possible violations of Pulse's community guidelines in its name or description."
 msgstr ""
 
 #: src/screens/ProfileList/AboutSection.tsx:99
@@ -9860,7 +9767,7 @@ msgid "This moderation service is unavailable. See below for more details. If th
 msgstr ""
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:686
-msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
+msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Pulse on <1>{1}</1>."
 msgstr ""
 
 #: src/components/WhoCanReply.tsx:273
@@ -10106,7 +10013,7 @@ msgid "Type:"
 msgstr ""
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:85
-msgid "Unable to access location. You'll need to visit your system settings to enable location services for Bluesky."
+msgid "Unable to access location. You'll need to visit your system settings to enable location services for Pulse."
 msgstr ""
 
 #: src/lib/hooks/useCleanError.ts:27
@@ -10123,7 +10030,7 @@ msgstr ""
 #: src/screens/Login/index.tsx:94
 #: src/screens/Login/LoginForm.tsx:169
 #: src/screens/Login/SetNewPasswordForm.tsx:81
-#: src/screens/Signup/index.tsx:88
+#: src/screens/Signup/index.tsx:87
 msgid "Unable to contact your service. Please check your Internet connection."
 msgstr ""
 
@@ -10225,11 +10132,11 @@ msgid "Unfortunately, none of your subscribed labelers supports this report type
 msgstr ""
 
 #: src/ageAssurance/components/NoAccessScreen.tsx:194
-msgid "Unfortunately, the birthdate you have saved to your profile makes you too young to access Bluesky."
+msgid "Unfortunately, the birthdate you have saved to your profile makes you too young to access Pulse."
 msgstr ""
 
 #: src/ageAssurance/components/NoAccessScreen.tsx:179
-msgid "Unfortunately, your declared age indicates that you are not old enough to access Bluesky in your region."
+msgid "Unfortunately, your declared age indicates that you are not old enough to access Pulse in your region."
 msgstr ""
 
 #: src/components/verification/VerificationsDialog.tsx:208
@@ -10401,10 +10308,6 @@ msgstr ""
 msgid "Updating..."
 msgstr ""
 
-#: src/screens/Onboarding/StepProfile/index.tsx:298
-msgid "Upload a photo instead"
-msgstr ""
-
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:483
 msgid "Upload a text file to:"
 msgstr ""
@@ -10442,7 +10345,7 @@ msgid "Uploading video..."
 msgstr ""
 
 #: src/screens/Settings/AppPasswords.tsx:66
-msgid "Use app passwords to sign in to other Bluesky clients without giving full access to your account or password."
+msgid "Use app passwords to sign in to other Pulse clients without giving full access to your account or password."
 msgstr ""
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:574
@@ -10473,7 +10376,7 @@ msgid "Use this to sign in to the other app along with your handle."
 msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:277
-msgid "Use your account email address, or another real email address you control, in case KWS or Bluesky needs to contact you."
+msgid "Use your account email address, or another real email address you control, in case KWS or Pulse needs to contact you."
 msgstr ""
 
 #: src/components/dms/AfterReportDialog.tsx:152
@@ -10524,15 +10427,15 @@ msgctxt "toast"
 msgid "User list updated"
 msgstr ""
 
-#: src/screens/Signup/StepHandle/index.tsx:230
+#: src/screens/Signup/StepHandle/index.tsx:234
 msgid "Username cannot be longer than {MAX_SERVICE_HANDLE_LENGTH, plural, other {# characters}}"
 msgstr ""
 
-#: src/screens/Signup/StepHandle/index.tsx:214
+#: src/screens/Signup/StepHandle/index.tsx:218
 msgid "Username cannot begin or end with a hyphen"
 msgstr ""
 
-#: src/screens/Signup/StepHandle/index.tsx:218
+#: src/screens/Signup/StepHandle/index.tsx:222
 msgid "Username must only contain letters (a-z), numbers, and hyphens"
 msgstr ""
 
@@ -10571,7 +10474,7 @@ msgid "Verification Settings"
 msgstr ""
 
 #: src/screens/Moderation/VerificationSettings.tsx:42
-msgid "Verifications on Bluesky work differently than on other platforms. <0>Learn more here.</0>"
+msgid "Verifications on Pulse work differently than on other platforms. <0>Learn more here.</0>"
 msgstr ""
 
 #: src/components/verification/VerificationsDialog.tsx:104
@@ -10921,7 +10824,7 @@ msgid "We estimate {estimatedTime} until your account is ready."
 msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:196
-msgid "We have partnered with <0>KWS</0> to handle age verification. When you click \"Begin\" below, KWS will email you instructions to complete the verification process. If your email address has already been used to verify your age for another game or service that uses KWS, you won’t need to do it again. When you’re done, you'll be brought back to continue using Bluesky."
+msgid "We have partnered with <0>KWS</0> to handle age verification. When you click \"Begin\" below, KWS will email you instructions to complete the verification process. If your email address has already been used to verify your age for another game or service that uses KWS, you won’t need to do it again. When you’re done, you'll be brought back to continue using Pulse."
 msgstr ""
 
 #: src/components/intents/VerifyEmailIntentDialog.tsx:101
@@ -10985,10 +10888,6 @@ msgstr ""
 msgid "We'll send an email to <0>{0}</0> containing a link. Please click on it to complete the email verification process."
 msgstr ""
 
-#: src/screens/Onboarding/StepInterests/index.tsx:61
-msgid "We'll use this to help customize your experience."
-msgstr ""
-
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:139
 msgid "We're also updating our <0>Community Guidelines</0>, and we want your input! These new guidelines will take effect on October 15th, 2025."
 msgstr ""
@@ -11012,10 +10911,10 @@ msgid "We're having network issues, try again"
 msgstr ""
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:95
-msgid "We’re introducing a new layer of verification on Bluesky — an easy-to-see checkmark."
+msgid "We're introducing a new layer of verification on Pulse — an easy-to-see checkmark."
 msgstr ""
 
-#: src/screens/Signup/index.tsx:136
+#: src/screens/Signup/index.tsx:135
 msgid "We're so excited to have you join us!"
 msgstr ""
 
@@ -11071,16 +10970,24 @@ msgstr ""
 msgid "We've confirmed your age assurance status. You can now close this dialog."
 msgstr ""
 
+#: src/screens/Onboarding/StepFinished/index.tsx:229
+msgid "We've set things up based on your interests. You can always customize later."
+msgstr ""
+
 #: src/screens/Deactivated.tsx:116
 msgid "Welcome back!"
+msgstr ""
+
+#: src/screens/Onboarding/StepProfile/index.tsx:157
+msgid "Welcome to Pulse! What should we call you?"
 msgstr ""
 
 #: src/components/NewskieDialog.tsx:139
 msgid "Welcome, friend!"
 msgstr ""
 
-#: src/screens/Onboarding/StepInterests/index.tsx:58
-msgid "What are your interests?"
+#: src/screens/Onboarding/StepInterests/index.tsx:55
+msgid "What are you into? Pick a few things you love."
 msgstr ""
 
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:41
@@ -11239,7 +11146,7 @@ msgid "You are a trusted verifier"
 msgstr ""
 
 #: src/ageAssurance/components/NoAccessScreen.tsx:170
-msgid "You are accessing Bluesky from a region that legally requires us to verify your age before allowing you to access the app."
+msgid "You are accessing Pulse from a region that legally requires us to verify your age before allowing you to access the app."
 msgstr ""
 
 #: src/components/forms/HostingProvider.tsx:45
@@ -11252,7 +11159,7 @@ msgstr ""
 
 #: src/ageAssurance/components/NoAccessScreen.tsx:299
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:136
-msgid "You are currently unable to access Bluesky's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
+msgid "You are currently unable to access Pulse's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
 msgstr ""
 
 #: src/screens/SignupQueued.tsx:157
@@ -11486,11 +11393,11 @@ msgid "You initiated this flow already, {0} ago. It may take up to 5 minutes for
 msgstr ""
 
 #: src/components/NewskieDialog.tsx:105
-msgid "You joined Bluesky {timeAgoString} ago"
+msgid "You joined Pulse {timeAgoString} ago"
 msgstr ""
 
 #: src/components/NewskieDialog.tsx:102
-msgid "You joined Bluesky using a starter pack {timeAgoString} ago"
+msgid "You joined Pulse using a starter pack {timeAgoString} ago"
 msgstr ""
 
 #: src/components/moderation/LabelsOnMeDialog.tsx:83
@@ -11509,16 +11416,16 @@ msgstr ""
 msgid "You may only add up to 3 feeds"
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:320
+#: src/screens/Signup/StepInfo/index.tsx:395
 msgid "You must be {0} years of age or older to create an account in your region."
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:315
+#: src/screens/Signup/StepInfo/index.tsx:390
 msgid "You must be {MIN_ACCESS_AGE} years of age or older to create an account."
 msgstr ""
 
 #: src/components/dialogs/BirthDateSettings.tsx:178
-msgid "You must be at least 13 years old to use Bluesky. Read our <0>Terms of Service</0> for more information."
+msgid "You must be at least 13 years old to use Pulse. Read our <0>Terms of Service</0> for more information."
 msgstr ""
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:364
@@ -11595,11 +11502,11 @@ msgstr ""
 msgid "You: {short}"
 msgstr ""
 
-#: src/screens/Signup/index.tsx:152
+#: src/screens/Signup/index.tsx:151
 msgid "You'll follow the suggested users and feeds once you finish creating your account!"
 msgstr ""
 
-#: src/screens/Signup/index.tsx:157
+#: src/screens/Signup/index.tsx:156
 msgid "You'll follow the suggested users once you finish creating your account!"
 msgstr ""
 
@@ -11612,7 +11519,7 @@ msgid "You'll follow these people right away"
 msgstr ""
 
 #: src/components/contacts/screens/GetContacts.tsx:313
-msgid "You'll need to go to the System Settings for Bluesky and give permission if you want to use this feature."
+msgid "You'll need to go to the System Settings for Pulse and give permission if you want to use this feature."
 msgstr ""
 
 #: src/components/activity-notifications/SubscribeProfileDialog.tsx:169
@@ -11621,6 +11528,10 @@ msgstr ""
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:283
 msgid "You'll stay updated with these feeds"
+msgstr ""
+
+#: src/screens/Onboarding/StepFinished/index.tsx:225
+msgid "You're all set! Your Pulse feed is ready."
 msgstr ""
 
 #: src/screens/SignupQueued.tsx:127
@@ -11677,10 +11588,6 @@ msgstr ""
 msgid "You've run out of videos to watch. Maybe it's a good time to take a break?"
 msgstr ""
 
-#: src/screens/Signup/index.tsx:190
-msgid "Your account"
-msgstr ""
-
 #: src/view/com/modals/DeleteAccount.tsx:84
 msgid "Your account has been deleted"
 msgstr ""
@@ -11698,15 +11605,11 @@ msgid "Your account repository, containing all public data records, can be downl
 msgstr ""
 
 #: src/screens/Takendown.tsx:212
-msgid "Your account was found to be in violation of the <0>Bluesky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
+msgid "Your account was found to be in violation of the <0>Pulse Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
 msgstr ""
 
 #: src/screens/Takendown.tsx:152
 msgid "Your appeal has been submitted. If your appeal succeeds, you will receive an email."
-msgstr ""
-
-#: src/screens/Signup/StepInfo/index.tsx:287
-msgid "Your birth date"
 msgstr ""
 
 #: src/components/Post/Embed/VideoEmbed/index.web.tsx:223
@@ -11722,11 +11625,11 @@ msgid "Your choice will be remembered for future links. You can change it at any
 msgstr ""
 
 #: src/view/com/notifications/NotificationFeedItem.tsx:374
-msgid "Your contact {firstAuthorLink} is on Bluesky"
+msgid "Your contact {firstAuthorLink} is on Pulse"
 msgstr ""
 
 #: src/view/com/notifications/NotificationFeedItem.tsx:372
-msgid "Your contact {firstAuthorName} is on Bluesky"
+msgid "Your contact {firstAuthorName} is on Pulse"
 msgstr ""
 
 #: src/components/contacts/screens/ViewMatches.tsx:453
@@ -11750,12 +11653,12 @@ msgstr ""
 #: src/screens/Login/ForgotPasswordForm.tsx:51
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:81
 #: src/screens/Signup/state.ts:277
-#: src/screens/Signup/StepInfo/index.tsx:131
+#: src/screens/Signup/StepInfo/index.tsx:136
 msgid "Your email appears to be invalid."
 msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:65
-msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Bluesky."
+msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Pulse."
 msgstr ""
 
 #: src/state/shell/progress-guide.tsx:216
@@ -11799,7 +11702,7 @@ msgstr ""
 msgid "Your location data is not tracked and does not leave your device."
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:365
+#: src/screens/Signup/StepInfo/index.tsx:444
 msgid "Your location has been updated."
 msgstr ""
 
@@ -11807,11 +11710,15 @@ msgstr ""
 msgid "Your muted words"
 msgstr ""
 
-#: src/screens/Settings/components/ChangePasswordDialog.tsx:71
-msgid "Your password has been changed successfully! Please use your new password when you sign in to Bluesky from now on."
+#: src/screens/Onboarding/StepProfile/index.tsx:163
+msgid "Your name"
 msgstr ""
 
-#: src/screens/Signup/StepInfo/index.tsx:160
+#: src/screens/Settings/components/ChangePasswordDialog.tsx:71
+msgid "Your password has been changed successfully! Please use your new password when you sign in to Pulse from now on."
+msgstr ""
+
+#: src/screens/Signup/StepInfo/index.tsx:176
 msgid "Your password must be at least 8 characters long."
 msgstr ""
 
@@ -11827,17 +11734,8 @@ msgstr ""
 msgid "Your preferred language"
 msgstr ""
 
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.tsx:100
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.web.tsx:53
-msgid "Your profile picture"
-msgstr ""
-
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:26
-msgid "Your profile picture surrounded by concentric circles of other users' profile pictures"
-msgstr ""
-
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:74
-msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
+msgid "Your profile, posts, feeds, and lists will no longer be visible to other Pulse users. You can reactivate your account at any time by logging in."
 msgstr ""
 
 #: src/view/com/composer/Composer.tsx:905

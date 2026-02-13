@@ -8,9 +8,7 @@ import Svg, {
   Stop,
   type SvgProps,
 } from 'react-native-svg'
-import {Image} from 'expo-image'
 
-import {useKawaiiMode} from '#/state/preferences/kawaii'
 import {flatten, useTheme} from '#/alf'
 
 const ratio = 57 / 64
@@ -23,31 +21,13 @@ type Props = {
 export const Logo = React.forwardRef(function LogoImpl(props: Props, ref) {
   const t = useTheme()
   const {fill, ...rest} = props
-  const gradient = fill === 'sky'
+  const gradient = fill === 'sky' || fill === 'pulse'
   const styles = flatten(props.style)
   const _fill = gradient
-    ? 'url(#sky)'
+    ? 'url(#pulse)'
     : fill || styles?.color || t.palette.primary_500
   // @ts-ignore it's fiiiiine
   const size = parseInt(rest.width || 32, 10)
-
-  const isKawaii = useKawaiiMode()
-
-  if (isKawaii) {
-    return (
-      <Image
-        source={
-          size > 100
-            ? require('../../../assets/kawaii.png')
-            : require('../../../assets/kawaii_smol.png')
-        }
-        accessibilityLabel="Bluesky"
-        accessibilityHint=""
-        accessibilityIgnoresInvertColors
-        style={[{height: size, aspectRatio: 1.4}]}
-      />
-    )
-  }
 
   return (
     <Svg
@@ -59,16 +39,21 @@ export const Logo = React.forwardRef(function LogoImpl(props: Props, ref) {
       style={[{width: size, height: size * ratio}, styles]}>
       {gradient && (
         <Defs>
-          <LinearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-            <Stop offset="0" stopColor="#0A7AFF" stopOpacity="1" />
-            <Stop offset="1" stopColor="#59B9FF" stopOpacity="1" />
+          <LinearGradient id="pulse" x1="0" y1="0" x2="1" y2="1">
+            <Stop offset="0" stopColor="#9C27B0" stopOpacity="1" />
+            <Stop offset="1" stopColor="#FF4081" stopOpacity="1" />
           </LinearGradient>
         </Defs>
       )}
 
       <Path
         fill={_fill}
-        d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"
+        d="M2 32 C2 32, 8 32, 14 32 C16 32, 17 30, 18 26 C19 22, 20 14, 22 10 C24 6, 26 4, 28 4 C30 4, 31 8, 32 16 C33 24, 33 28, 34 32 C35 36, 36 44, 37 48 C38 52, 39 54, 40 54 C41 54, 42 50, 43 44 C44 38, 45 34, 46 32 C47 30, 48 32, 50 32 C52 32, 58 32, 62 32"
+        strokeWidth="4"
+        stroke={_fill}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fillOpacity="0"
       />
     </Svg>
   )

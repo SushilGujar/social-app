@@ -369,9 +369,9 @@ let NotificationFeedItem = ({
     }
     icon = <PersonPlusIcon size="xl" style={{color: t.palette.primary_500}} />
   } else if (item.type === 'contact-match') {
-    a11yLabel = _(msg`Your contact ${firstAuthorName} is on Bluesky`)
+    a11yLabel = _(msg`Your contact ${firstAuthorName} is on Pulse`)
     notificationContent = (
-      <Trans>Your contact {firstAuthorLink} is on Bluesky</Trans>
+      <Trans>Your contact {firstAuthorLink} is on Pulse</Trans>
     )
     icon = (
       <ContactsIconFilled size="xl" style={{color: t.palette.primary_500}} />
@@ -426,7 +426,7 @@ let NotificationFeedItem = ({
     )
     icon = (
       <View style={{height: 30, width: 30}}>
-        <StarterPack width={30} gradient="sky" />
+        <StarterPack width={30} gradient="pulse" />
       </View>
     )
   } else if (item.type === 'verified') {

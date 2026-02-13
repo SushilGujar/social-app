@@ -15,7 +15,7 @@ export const DEMO_FEED = {
         cid: 'bafyreihwh3wxxme732ylbylhhdyz7ex6t4jtu6s3gjxxvnnh4feddhg3ku',
         author: {
           did: 'did:plc:pvooorihapc2lf2pijehgrdf',
-          handle: 'forkedriverband.bsky.social',
+          handle: 'forkedriverband.pulse.social',
           displayName: 'Forked River Band',
           avatar: 'https://bsky.social/about/adi/post_1_avi.jpg',
           viewer: {
@@ -97,7 +97,7 @@ export const DEMO_FEED = {
         cid: 'bafyreienuabsr55rycirdf4ewue5tjcseg5lzqompcsh2brqzag6hvxllm',
         author: {
           did: 'did:plc:fhhqii56ppgyh5qcm2b3mokf',
-          handle: 'dinh-designs.bsky.social',
+          handle: 'dinh-designs.pulse.social',
           displayName: 'Rich Dinh Designs',
           avatar: 'https://bsky.social/about/adi/post_2_avi.jpg',
           viewer: {
@@ -167,7 +167,7 @@ export const DEMO_FEED = {
         cid: 'bafyreiepn7obmlshliori4j34texpaukrqkyyu7cq6nmpzk4lkis7nqeae',
         author: {
           did: 'did:plc:h7fwnfejmmifveeea5eyxgkc',
-          handle: 'rodyalbuerne.bsky.social',
+          handle: 'rodyalbuerne.pulse.social',
           displayName: 'Rody Albuerne',
           avatar: 'https://bsky.social/about/adi/post_3_avi.jpg',
           viewer: {

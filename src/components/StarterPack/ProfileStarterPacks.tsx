@@ -337,7 +337,7 @@ function Empty() {
           </Prompt.TitleText>
           <Prompt.DescriptionText>
             <Trans>
-              Bluesky will choose a set of recommended accounts from people in
+              Pulse will choose a set of recommended accounts from people in
               your network.
             </Trans>
           </Prompt.DescriptionText>

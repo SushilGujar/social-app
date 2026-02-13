@@ -2,7 +2,6 @@
 import React from 'react'
 import {AppBskyGraphDefs, AppBskyGraphStarterpack} from '@atproto/api'
 
-import {Butterfly} from './Butterfly.js'
 import {Img} from './Img.js'
 
 export const STARTERPACK_HEIGHT = 630
@@ -144,7 +143,7 @@ export function StarterPack(props: {
             justifyContent: 'center',
             padding: '30px 30px 10px',
           }}>
-          on <Butterfly width="65" style={{margin: '-7px 10px 0'}} /> Bluesky
+          on Pulse
         </div>
       </div>
     </div>

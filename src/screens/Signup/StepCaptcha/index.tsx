@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import {ActivityIndicator, Platform, View} from 'react-native'
 import ReactNativeDeviceAttest from 'react-native-device-attest'
-import {msg} from '@lingui/macro'
+import {msg, Trans} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 import {nanoid} from 'nanoid/non-secure'
 
 import {createFullHandle} from '#/lib/strings/handles'
 import {logger} from '#/logger'
+import {ChatBubble} from '#/screens/Onboarding/ChatBubble'
 import {useSignupContext} from '#/screens/Signup/state'
 import {CaptchaWebView} from '#/screens/Signup/StepCaptcha/CaptchaWebView'
 import {atoms as a, useTheme} from '#/alf'
@@ -147,6 +148,11 @@ function StepCaptchaInner({
   return (
     <>
       <View style={[a.gap_lg, a.pt_lg]}>
+        <ChatBubble>
+          <Trans>
+            One last thing — please complete this quick verification.
+          </Trans>
+        </ChatBubble>
         <View
           style={[
             a.w_full,

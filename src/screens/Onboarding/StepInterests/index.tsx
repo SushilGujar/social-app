@@ -6,12 +6,8 @@ import {useLingui} from '@lingui/react'
 import {interests, useInterestsDisplayNames} from '#/lib/interests'
 import {capitalize} from '#/lib/strings/capitalize'
 import {logger} from '#/logger'
-import {
-  OnboardingControls,
-  OnboardingDescriptionText,
-  OnboardingPosition,
-  OnboardingTitleText,
-} from '#/screens/Onboarding/Layout'
+import {ChatBubble} from '#/screens/Onboarding/ChatBubble'
+import {OnboardingControls} from '#/screens/Onboarding/Layout'
 import {useOnboardingInternalState} from '#/screens/Onboarding/state'
 import {InterestButton} from '#/screens/Onboarding/StepInterests/InterestButton'
 import {atoms as a} from '#/alf'
@@ -31,7 +27,7 @@ export function StepInterests() {
     state.interestsStepResults.selectedInterests.map(i => i),
   )
 
-  const saveInterests = React.useCallback(async () => {
+  const saveInterests = async () => {
     setSaving(true)
 
     try {
@@ -46,22 +42,20 @@ export function StepInterests() {
         selectedInterestsLength: selectedInterests.length,
       })
     } catch (e: any) {
-      logger.info(`onboading: error saving interests`)
+      logger.info(`onboarding: error saving interests`)
       logger.error(e)
     }
-  }, [ax, selectedInterests, setSaving, dispatch])
+  }
 
   return (
-    <View style={[a.align_start, a.gap_sm]} testID="onboardingInterests">
-      <OnboardingPosition />
-      <OnboardingTitleText>
-        <Trans>What are your interests?</Trans>
-      </OnboardingTitleText>
-      <OnboardingDescriptionText>
-        <Trans>We'll use this to help customize your experience.</Trans>
-      </OnboardingDescriptionText>
+    <View
+      style={[a.align_start, a.gap_md]}
+      testID="onboardingInterests">
+      <ChatBubble>
+        <Trans>What are you into? Pick a few things you love.</Trans>
+      </ChatBubble>
 
-      <View style={[a.w_full, a.pt_lg]}>
+      <View style={[a.w_full, a.pt_xs]}>
         <Toggle.Group
           values={selectedInterests}
           onChange={setSelectedInterests}
@@ -79,11 +73,18 @@ export function StepInterests() {
         </Toggle.Group>
       </View>
 
+      {selectedInterests.length > 0 && (
+        <ChatBubble delay={200}>
+          <Trans>
+            Great taste! We'll customize your feed based on these.
+          </Trans>
+        </ChatBubble>
+      )}
+
       <OnboardingControls.Portal>
         <Button
           disabled={saving}
           testID="onboardingContinue"
-          variant="solid"
           color="primary"
           size="large"
           label={_(msg`Continue to next step`)}

@@ -6,7 +6,7 @@ import {gradients} from '#/alf/tokens'
 
 export function LinearGradientBackground({
   style,
-  gradient = 'sky',
+  gradient = 'pulse',
   children,
   start,
   end,

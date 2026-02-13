@@ -38,16 +38,16 @@ module.exports = function (_config) {
   return {
     expo: {
       version: VERSION,
-      name: 'Bluesky',
-      slug: 'bluesky',
-      scheme: 'bluesky',
+      name: 'Pulse',
+      slug: 'pulse',
+      scheme: 'pulse',
       owner: 'blueskysocial',
       runtimeVersion: {
         policy: 'appVersion',
       },
       icon: './assets/app-icons/ios_icon_default_next.png',
       userInterfaceStyle: 'automatic',
-      primaryColor: '#1083fe',
+      primaryColor: '#D600FB',
       newArchEnabled: false,
       ios: {
         supportsTablet: false,
@@ -69,7 +69,7 @@ module.exports = function (_config) {
             'Used to save images to your library.',
           NSPhotoLibraryUsageDescription:
             'Used for profile pictures, posts, and other kinds of content',
-          CFBundleSpokenName: 'Blue Sky',
+          CFBundleSpokenName: 'Pulse',
           CFBundleLocalizations: [
             'en',
             'an',
@@ -185,7 +185,7 @@ module.exports = function (_config) {
         adaptiveIcon: {
           foregroundImage: './assets/icon-android-foreground.png',
           monochromeImage: './assets/icon-android-monochrome.png',
-          backgroundColor: '#006AFF',
+          backgroundColor: '#D600FB',
         },
         googleServicesFile: './google-services.json',
         package: 'xyz.blueskyweb.app',
@@ -269,7 +269,7 @@ module.exports = function (_config) {
           'expo-notifications',
           {
             icon: './assets/icon-android-notification.png',
-            color: '#1185fe',
+            color: '#D600FB',
             sounds: PLATFORM === 'ios' ? ['assets/dm.aiff'] : ['assets/dm.mp3'],
           },
         ],
@@ -313,22 +313,22 @@ module.exports = function (_config) {
           {
             ios: {
               enableFullScreenImage_legacy: true, // iOS only
-              backgroundColor: '#A8CCFF', // primary_200
+              backgroundColor: '#F5A8FF', // primary_200
               image: './assets/splash/splash.png',
               resizeMode: 'cover',
               dark: {
                 enableFullScreenImage_legacy: true, // iOS only
-                backgroundColor: '#00398A', // primary_800
+                backgroundColor: '#70008A', // primary_800
                 image: './assets/splash/splash-dark.png',
                 resizeMode: 'cover',
               },
             },
             android: {
-              backgroundColor: '#A8CCFF', // primary_200
+              backgroundColor: '#F5A8FF', // primary_200
               image: './assets/splash/android-splash-logo-white.png',
               imageWidth: 102, // even division of 306px
               dark: {
-                backgroundColor: '#00398A', // primary_800
+                backgroundColor: '#70008A', // primary_800
                 image: './assets/splash/android-splash-logo-white.png',
                 imageWidth: 102,
               },
@@ -353,7 +353,7 @@ module.exports = function (_config) {
             },
 
             /**
-             * Bluesky+ core set
+             * Pulse core set
              */
             core_aurora: {
               ios: './assets/app-icons/ios_icon_core_aurora.png',
@@ -408,7 +408,7 @@ module.exports = function (_config) {
           'expo-contacts',
           {
             contactsPermission:
-              'I agree to allow Bluesky to use my contacts for friend discovery until I opt out.',
+              'I agree to allow Pulse to use my contacts for friend discovery until I opt out.',
           },
         ],
       ],
@@ -419,8 +419,8 @@ module.exports = function (_config) {
               ios: {
                 appExtensions: [
                   {
-                    targetName: 'Share-with-Bluesky',
-                    bundleIdentifier: 'xyz.blueskyweb.app.Share-with-Bluesky',
+                    targetName: 'Share-with-Pulse',
+                    bundleIdentifier: 'xyz.blueskyweb.app.Share-with-Pulse',
                     entitlements: {
                       'com.apple.security.application-groups': [
                         'group.app.bsky',
@@ -428,8 +428,8 @@ module.exports = function (_config) {
                     },
                   },
                   {
-                    targetName: 'BlueskyNSE',
-                    bundleIdentifier: 'xyz.blueskyweb.app.BlueskyNSE',
+                    targetName: 'PulseNSE',
+                    bundleIdentifier: 'xyz.blueskyweb.app.PulseNSE',
                     entitlements: {
                       'com.apple.security.application-groups': [
                         'group.app.bsky',
@@ -437,7 +437,7 @@ module.exports = function (_config) {
                     },
                   },
                   {
-                    targetName: 'BlueskyClip',
+                    targetName: 'PulseClip',
                     bundleIdentifier: 'xyz.blueskyweb.app.AppClip',
                   },
                 ],
